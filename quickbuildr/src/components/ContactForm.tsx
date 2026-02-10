@@ -16,7 +16,7 @@ type FormState = {
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const API_BASE_URL = 'http://127.0.0.1:8000'
-const API_VERCEL_URL = '"https://https://quickbuildr-assessment.onrender.com.com/contact'
+const API_VERCEL_URL = 'https://https://quickbuildr-assessment.onrender.com.com/contact'
 
 
 log.info('ContactForm component initialized')
