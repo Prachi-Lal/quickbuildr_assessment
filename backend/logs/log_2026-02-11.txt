@@ -244,3 +244,19 @@ RuntimeError: Failed to send email: (550, b'5.7.0 Too many emails per second. Pl
 2026-02-11 00:33:36,911 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
 2026-02-11 00:33:36,911 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
 2026-02-11 00:33:36,912 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:34:57,676 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:34:57,676 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 00:34:57,676 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:35:11,724 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 00:35:11,724 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 00:35:11,724 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 00:35:11,724 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 00:35:17,665 - backend.app.main - INFO - Email sent successfully for prachilal1606@gmail.com.com
+2026-02-11 00:35:46,870 - backend.app.schemas - DEBUG - ContactRequest validated: name=GHDSJGBJQDBSJ, email=prachilal1606@gmail.com
+2026-02-11 00:35:46,870 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com
+2026-02-11 00:35:46,870 - backend.app.main - DEBUG - Contact data: name=GHDSJGBJQDBSJ, email=prachilal1606@gmail.com, message_length=21
+2026-02-11 00:35:46,870 - backend.app.main - INFO - Sending email for contact from GHDSJGBJQDBSJ (prachilal1606@gmail.com)
+2026-02-11 00:35:52,502 - backend.app.main - INFO - Email sent successfully for prachilal1606@gmail.com
+2026-02-11 00:39:57,606 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:39:57,607 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 00:39:57,607 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
