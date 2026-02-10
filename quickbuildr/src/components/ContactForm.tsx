@@ -16,6 +16,8 @@ type FormState = {
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const API_BASE_URL = 'http://127.0.0.1:8000'
+const API_VERCEL_URL = '"https://your-render-backend.onrender.com/contact'
+
 
 log.info('ContactForm component initialized')
 
@@ -58,10 +60,10 @@ export default function ContactForm() {
         message: form.message.trim()
       }
 
-      log.info('Sending request to backend', { url: `${API_BASE_URL}/contact` })
+      log.info('Sending request to backend', { url: `${API_VERCEL_URL}/contact` })
       log.debug('Request payload', payload)
 
-      const response = await fetch(`${API_BASE_URL}/contact`, {
+      const response = await fetch(`${API_VERCEL_URL}/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
