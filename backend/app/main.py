@@ -5,9 +5,9 @@ from fastapi.concurrency import run_in_threadpool
 from starlette.responses import JSONResponse
 
 from .schemas import ContactRequest
-from .config_google_smtp import get_settings
+from .config_resend import get_settings
 from .logger import setup_logging
-from .email_service_google import send_contact_email
+from .email_service_resend import send_contact_email
 
 
 
@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 settings = get_settings()
 
-logger.info("Settings loaded: SMTP_SERVER=%s, SMTP_PORT=%d", settings.SMTP_SERVER, settings.SMTP_PORT)
+logger.info("Settings loaded: Using Resend API with recipient %s", settings.SMTP_USERNAME)
 
 app = FastAPI(title="Contact API")
 
