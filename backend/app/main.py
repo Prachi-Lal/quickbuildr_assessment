@@ -23,7 +23,7 @@ app = FastAPI(title="Contact API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "quickbuildr-assessment.vercel.app"],
+    allow_origins=["http://localhost:5173", "https://quickbuildr-assessment.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
