@@ -1,0 +1,246 @@
+2026-02-11 00:12:49,530 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:12:49,531 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:12:49,531 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:13:29,517 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:13:29,517 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:13:29,517 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:13:40,604 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:13:50,377 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:13:50,377 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:13:50,378 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:14:01,865 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 00:14:01,865 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 00:14:01,866 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 00:14:01,866 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 00:14:01,872 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: name 'name' is not defined
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 16, in send_contact_email
+    Name: {name}
+           ^^^^
+NameError: name 'name' is not defined
+2026-02-11 00:17:16,346 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:17:16,347 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:17:16,347 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:17:25,617 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 00:17:25,617 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 00:17:25,618 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 00:17:25,618 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 00:17:31,888 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 83, in send_contact_email
+    server.send_message(msg)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 987, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         rcpt_options)
+                         ^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 903, in sendmail
+    (code, resp) = self.data(msg)
+                   ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 578, in data
+    raise SMTPDataError(code, repl)
+smtplib.SMTPDataError: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 86, in send_contact_email
+    raise RuntimeError(f"Failed to send email: {e}")
+RuntimeError: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+2026-02-11 00:18:15,734 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 00:18:15,734 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 00:18:15,734 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 00:18:15,734 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 00:18:22,241 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 83, in send_contact_email
+    server.send_message(msg)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 987, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         rcpt_options)
+                         ^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 903, in sendmail
+    (code, resp) = self.data(msg)
+                   ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 578, in data
+    raise SMTPDataError(code, repl)
+smtplib.SMTPDataError: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 86, in send_contact_email
+    raise RuntimeError(f"Failed to send email: {e}")
+RuntimeError: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+2026-02-11 00:19:14,604 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:19:14,605 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:19:14,605 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:19:23,183 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 00:19:23,183 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 00:19:23,183 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 00:19:23,184 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 00:19:31,224 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 83, in send_contact_email
+    server.send_message(msg)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 987, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         rcpt_options)
+                         ^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 903, in sendmail
+    (code, resp) = self.data(msg)
+                   ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 578, in data
+    raise SMTPDataError(code, repl)
+smtplib.SMTPDataError: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 86, in send_contact_email
+    raise RuntimeError(f"Failed to send email: {e}")
+RuntimeError: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+2026-02-11 00:24:12,311 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:24:12,311 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:24:12,311 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:24:27,129 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:24:27,129 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:24:27,129 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:27:31,360 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:27:31,360 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:27:31,360 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:28:33,558 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:28:33,559 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:28:33,559 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:28:40,859 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:28:40,859 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:28:40,859 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:29:32,367 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 00:29:32,367 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 00:29:32,368 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 00:29:32,368 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 00:29:40,327 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 83, in send_contact_email
+    server.send_message(msg)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 987, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         rcpt_options)
+                         ^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 903, in sendmail
+    (code, resp) = self.data(msg)
+                   ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 578, in data
+    raise SMTPDataError(code, repl)
+smtplib.SMTPDataError: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 86, in send_contact_email
+    raise RuntimeError(f"Failed to send email: {e}")
+RuntimeError: Failed to send email: (550, b'5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing')
+2026-02-11 00:30:20,048 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:30:20,048 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:30:20,048 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:32:24,907 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:32:24,908 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:32:24,908 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:32:52,596 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:32:52,596 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=sandbox.smtp.mailtrap.io, SMTP_PORT=587
+2026-02-11 00:32:52,597 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 00:33:36,911 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 00:33:36,911 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 00:33:36,912 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173

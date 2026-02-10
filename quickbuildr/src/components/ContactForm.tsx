@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
-import { db } from '../firebase/firebase'
+
+// Logger utility for frontend
+const log = {
+  info: (msg: string, data?: any) => console.log(`[INFO] ${msg}`, data || ''),
+  debug: (msg: string, data?: any) => console.debug(`[DEBUG] ${msg}`, data || ''),
+  error: (msg: string, data?: any) => console.error(`[ERROR] ${msg}`, data || ''),
+  warn: (msg: string, data?: any) => console.warn(`[WARN] ${msg}`, data || '')
+}
 
 type FormState = {
   name: string
@@ -9,6 +15,9 @@ type FormState = {
 }
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const API_BASE_URL = 'http://127.0.0.1:8000'
+
+log.info('ContactForm component initialized')
 
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>({ name: '', email: '', message: '' })
@@ -18,37 +27,62 @@ export default function ContactForm() {
   function update(field: keyof FormState) {
     return (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       setForm(prev => ({ ...prev, [field]: e.target.value }))
+      log.debug(`Field updated: ${field}`, { value: e.currentTarget.value.substring(0, 20) })
     }
   }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    log.info('Form submission started')
     setStatus({ type: null, message: '' })
 
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      log.warn('Validation failed: missing required fields')
       setStatus({ type: 'error', message: 'Please fill out all required fields.' })
       return
     }
 
     if (!emailRegex.test(form.email)) {
+      log.warn('Validation failed: invalid email', { email: form.email })
       setStatus({ type: 'error', message: 'Please provide a valid email address.' })
       return
     }
 
+    log.info('Form validation passed', { name: form.name, email: form.email })
     setLoading(true)
+
     try {
-      const col = collection(db, 'contacts')
-      await addDoc(col, {
+      const payload = {
         name: form.name.trim(),
         email: form.email.trim(),
-        message: form.message.trim(),
-        createdAt: serverTimestamp()
+        message: form.message.trim()
+      }
+
+      log.info('Sending request to backend', { url: `${API_BASE_URL}/contact` })
+      log.debug('Request payload', payload)
+
+      const response = await fetch(`${API_BASE_URL}/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
       })
+
+      log.debug('Response received', { status: response.status, statusText: response.statusText })
+
+      if (!response.ok) {
+        const errorData = await response.text()
+        log.error('Backend error', { status: response.status, error: errorData })
+        throw new Error(`Backend returned ${response.status}: ${response.statusText}`)
+      }
+
+      const data = await response.json()
+      log.info('Email sent successfully', data)
       setStatus({ type: 'success', message: 'Thanks — your message was sent.' })
       setForm({ name: '', email: '', message: '' })
     } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : String(err)
+      log.error('Form submission failed', { error: errorMsg })
       setStatus({ type: 'error', message: 'Something went wrong. Please try again later.' })
-      console.error(err)
     } finally {
       setLoading(false)
     }

@@ -2,7 +2,7 @@ import smtplib
 import ssl
 from email.mime.text import MIMEText
 from datetime import datetime
-from .config import get_settings
+from .config_google_smtp import get_settings
 
 
 def send_contact_email(contact, settings=None):import smtplib

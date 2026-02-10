@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "Contact API",
+    "_postman_id": "a1b2c3d4-quickbuildr-contact",
+    "description": "Postman collection for Contact API (POST /contact)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Submit Contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"message\": \"Hello from Postman!\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/contact",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "contact"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
+              "pm.test(\"Response has success true\", function () { var json = pm.response.json(); pm.expect(json.success).to.eql(true); });"
+            ]
+          }
+        }
+      ],
+      "response": []
+    }
+  ]
+}

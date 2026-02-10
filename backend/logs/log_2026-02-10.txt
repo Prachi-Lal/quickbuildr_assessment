@@ -1,0 +1,154 @@
+2026-02-10 19:07:55,118 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-10.txt
+2026-02-10 19:07:55,119 - backend.app.config - INFO - Settings loaded from .env: SMTP_SERVER=smtp.mailtrap.io, RECIPIENT_EMAIL=plalindia01@gmail.com
+2026-02-10 19:07:55,119 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.mailtrap.io, SMTP_PORT=2525
+2026-02-10 19:07:55,119 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-10 19:08:15,247 - backend.app.schemas - DEBUG - ContactRequest validated: name=pgfgfdhfdhfdhdfhfd, email=prachilal6@gmail.com
+2026-02-10 19:08:15,248 - backend.app.main - INFO - POST /contact received from prachilal6@gmail.com
+2026-02-10 19:08:15,250 - backend.app.main - DEBUG - Contact data: name=pgfgfdhfdhfdhdfhfd, email=prachilal6@gmail.com, message_length=21
+2026-02-10 19:08:15,250 - backend.app.main - INFO - Sending email for contact from pgfgfdhfdhfdhdfhfd (prachilal6@gmail.com)
+2026-02-10 19:08:15,258 - backend.app.email_service - DEBUG - Preparing email: subject=New Contact Form Submission, from=hi@demomailtrap.co, to=plalindia01@gmail.com
+2026-02-10 19:08:15,258 - backend.app.email_service - INFO - Connecting to SMTP server smtp.mailtrap.io:2525
+2026-02-10 19:08:16,050 - backend.app.email_service - DEBUG - EHLO sent
+2026-02-10 19:08:16,050 - backend.app.email_service - DEBUG - Logging in to SMTP server
+2026-02-10 19:08:16,561 - backend.app.email_service - ERROR - SMTP error while sending contact email: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 48, in send_contact_email
+    server.login(settings.EMAIL_ADDRESS, settings.EMAIL_PASSWORD)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 751, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 649, in auth
+    (code, resp) = self.docmd("AUTH", mechanism + " " + response)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 439, in docmd
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\smtplib.py", line 412, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2026-02-10 19:08:16,567 - backend.app.main - ERROR - Failed to send email for prachilal6@gmail.com: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 41, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 48, in send_contact_email
+    server.login(settings.EMAIL_ADDRESS, settings.EMAIL_PASSWORD)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 751, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 649, in auth
+    (code, resp) = self.docmd("AUTH", mechanism + " " + response)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 439, in docmd
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\smtplib.py", line 412, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2026-02-10 19:08:29,400 - backend.app.schemas - DEBUG - ContactRequest validated: name=pgfgfdhfdhfdhdfhfd, email=prachilal6@gmail.com
+2026-02-10 19:08:29,400 - backend.app.main - INFO - POST /contact received from prachilal6@gmail.com
+2026-02-10 19:08:29,400 - backend.app.main - DEBUG - Contact data: name=pgfgfdhfdhfdhdfhfd, email=prachilal6@gmail.com, message_length=21
+2026-02-10 19:08:29,400 - backend.app.main - INFO - Sending email for contact from pgfgfdhfdhfdhdfhfd (prachilal6@gmail.com)
+2026-02-10 19:08:29,400 - backend.app.email_service - DEBUG - Preparing email: subject=New Contact Form Submission, from=hi@demomailtrap.co, to=plalindia01@gmail.com
+2026-02-10 19:08:29,400 - backend.app.email_service - INFO - Connecting to SMTP server smtp.mailtrap.io:2525
+2026-02-10 19:08:30,167 - backend.app.email_service - DEBUG - EHLO sent
+2026-02-10 19:08:30,167 - backend.app.email_service - DEBUG - Logging in to SMTP server
+2026-02-10 19:08:30,674 - backend.app.email_service - ERROR - SMTP error while sending contact email: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 48, in send_contact_email
+    server.login(settings.EMAIL_ADDRESS, settings.EMAIL_PASSWORD)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 751, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 649, in auth
+    (code, resp) = self.docmd("AUTH", mechanism + " " + response)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 439, in docmd
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\smtplib.py", line 412, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2026-02-10 19:08:30,676 - backend.app.main - ERROR - Failed to send email for prachilal6@gmail.com: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 41, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service.py", line 48, in send_contact_email
+    server.login(settings.EMAIL_ADDRESS, settings.EMAIL_PASSWORD)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 751, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 649, in auth
+    (code, resp) = self.docmd("AUTH", mechanism + " " + response)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\smtplib.py", line 439, in docmd
+    return self.getreply()
+           ~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\smtplib.py", line 412, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2026-02-10 19:11:21,683 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-10.txt
+2026-02-10 19:11:21,684 - backend.app.config - INFO - Settings loaded from .env: SMTP_SERVER=smtp.mailtrap.io, RECIPIENT_EMAIL=plalindia01@gmail.com
+2026-02-10 19:11:21,685 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.mailtrap.io, SMTP_PORT=2525
+2026-02-10 19:11:21,685 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-10 19:11:24,951 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-10.txt
+2026-02-10 19:11:24,953 - backend.app.config - INFO - Settings loaded from .env: SMTP_SERVER=smtp.mailtrap.io, RECIPIENT_EMAIL=plalindia01@gmail.com
+2026-02-10 19:11:24,953 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.mailtrap.io, SMTP_PORT=2525
+2026-02-10 19:11:24,953 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-10 19:25:01,471 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-10.txt
+2026-02-10 19:25:01,472 - backend.app.config - INFO - Settings loaded from .env: SMTP_SERVER=smtp.mailtrap.io, RECIPIENT_EMAIL=plalindia01@gmail.com
+2026-02-10 19:25:01,473 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.mailtrap.io, SMTP_PORT=2525
+2026-02-10 19:25:01,473 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-10 19:28:33,841 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-10.txt
+2026-02-10 19:28:33,843 - backend.app.config - INFO - Settings loaded from .env: SMTP_SERVER=smtp.mailtrap.io, RECIPIENT_EMAIL=plalindia01@gmail.com
+2026-02-10 19:28:33,843 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.mailtrap.io, SMTP_PORT=2525
+2026-02-10 19:28:33,843 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173

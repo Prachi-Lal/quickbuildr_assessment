@@ -1,0 +1,4 @@
+2026-02-10 18:25:25 - root - INFO - Logging to file: D:\Documents\quickbuildr_assessment\backend\log_2026-02-10.txt
+2026-02-10 18:25:25 - backend.app.config - INFO - Settings loaded from .env: SMTP_SERVER=smtp.mailtrap.io, RECIPIENT_EMAIL=plalindia01@gmail.com
+2026-02-10 18:25:25 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.mailtrap.io, SMTP_PORT=2525
+2026-02-10 18:25:25 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
