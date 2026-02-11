@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedin, FaGithub, FaGlobe, FaMedium } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaGlobe, FaMedium } from "react-icons/fa6"
 import { MdEmail } from "react-icons/md"
 
 
