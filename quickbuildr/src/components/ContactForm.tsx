@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import toast from "react-hot-toast"
+
 
 // Logger utility for frontend
 const log = {
@@ -38,11 +40,23 @@ export default function ContactForm() {
     log.info('Form submission started')
     setStatus({ type: null, message: '' })
 
-    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
-      log.warn('Validation failed: missing required fields')
-      setStatus({ type: 'error', message: 'Please fill out all required fields.' })
+    // 🔥 Frontend validation using toast
+
+    if (form.name.trim().length < 3) {
+      toast.error("Name must be at least 3 characters long.")
       return
     }
+
+    if (!emailRegex.test(form.email.trim())) {
+      toast.error("Please enter a valid email address.")
+      return
+    } 
+
+    if (form.message.trim().length < 10) {
+      toast.error("Message must be at least 10 characters long.")
+      return
+    }
+
 
     if (!emailRegex.test(form.email)) {
       log.warn('Validation failed: invalid email', { email: form.email })
@@ -72,9 +86,15 @@ export default function ContactForm() {
       log.debug('Response received', { status: response.status, statusText: response.statusText })
 
       if (!response.ok) {
-        const errorData = await response.text()
-        log.error('Backend error', { status: response.status, error: errorData })
-        throw new Error(`Backend returned ${response.status}: ${response.statusText}`)
+        const errorData = await response.json().catch(() => null)
+
+        if (errorData?.detail) {
+          toast.error(errorData.detail)
+        } else {
+          toast.error("Failed to send message.")
+        }
+
+        return
       }
 
       const data = await response.json()
