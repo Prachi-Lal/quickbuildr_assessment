@@ -260,3 +260,314 @@ RuntimeError: Failed to send email: (550, b'5.7.0 Too many emails per second. Pl
 2026-02-11 00:39:57,606 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
 2026-02-11 00:39:57,607 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
 2026-02-11 00:39:57,607 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:01:05,326 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:01:05,327 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:01:05,327 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:27:13,137 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:27:13,137 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:27:13,137 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:35:58,094 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:35:58,094 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:35:58,094 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:38:47,841 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:38:47,841 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:38:47,842 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:52:18,618 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:52:18,619 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:52:18,619 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:52:19,364 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:52:19,364 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:52:19,364 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:53:35,470 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:53:35,470 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:53:35,471 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:53:55,830 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:53:55,831 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:53:55,831 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:54:18,791 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:54:18,791 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:54:18,792 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:55:18,201 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:55:18,201 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:55:18,202 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:55:32,528 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:55:32,528 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:55:32,528 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:55:56,780 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:55:56,780 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:55:56,781 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:56:14,958 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:56:14,958 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:56:14,959 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:56:49,904 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 01:56:49,905 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 01:56:49,905 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 01:59:13,265 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 01:59:13,266 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 01:59:13,266 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 01:59:13,266 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 01:59:13,281 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 12, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:06:37,430 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:06:37,431 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 02:06:37,431 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 02:06:59,905 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:06:59,905 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:06:59,905 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:06:59,905 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:06:59,918 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 12, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:07:16,365 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:07:16,366 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:07:16,366 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:07:16,366 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:07:16,366 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 12, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:07:17,824 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:07:17,824 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:07:17,824 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:07:17,824 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:07:17,825 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 12, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:07:59,547 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:07:59,547 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 02:07:59,547 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 02:08:01,953 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:08:01,953 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:08:01,953 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:08:01,953 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:08:01,965 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 13, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:08:03,230 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:08:03,231 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:08:03,231 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:08:03,231 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:08:03,232 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 13, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:08:12,335 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:08:12,335 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:08:12,335 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:08:12,336 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:08:12,336 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 13, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:08:15,814 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:08:15,815 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:08:15,815 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:08:15,815 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:08:15,815 - backend.app.main - ERROR - Failed to send email for prachilal1606@gmail.com.com: 'Settings' object has no attribute 'RESEND_API_KEY'
+Traceback (most recent call last):
+  File "D:\Documents\quickbuildr_assessment\backend\app\main.py", line 42, in contact
+    await run_in_threadpool(send_contact_email, contact, settings)
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\Documents\quickbuildr_assessment\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+  File "D:\Documents\quickbuildr_assessment\backend\app\email_service_resend.py", line 13, in send_contact_email
+    "Authorization": f"Bearer {settings.RESEND_API_KEY}",
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'RESEND_API_KEY'
+2026-02-11 02:09:44,928 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:09:44,928 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 02:09:44,929 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 02:09:50,474 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:09:50,474 - backend.app.main - INFO - Settings loaded: SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587
+2026-02-11 02:09:50,475 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 02:10:06,649 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:10:06,649 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 02:10:13,856 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:10:13,857 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 02:10:13,857 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 02:10:13,857 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 02:10:34,343 - backend.app.schemas - DEBUG - ContactRequest validated: name=prachnfgjkd, email=prachilal1606@gmail.com.com
+2026-02-11 02:10:34,344 - backend.app.main - INFO - POST /contact received from prachilal1606@gmail.com.com
+2026-02-11 02:10:34,344 - backend.app.main - DEBUG - Contact data: name=prachnfgjkd, email=prachilal1606@gmail.com.com, message_length=10
+2026-02-11 02:10:34,344 - backend.app.main - INFO - Sending email for contact from prachnfgjkd (prachilal1606@gmail.com.com)
+2026-02-11 02:10:34,364 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.resend.com:443
+2026-02-11 02:10:35,377 - urllib3.connectionpool - DEBUG - https://api.resend.com:443 "POST /emails HTTP/1.1" 200 None
+2026-02-11 02:10:35,382 - backend.app.main - INFO - Email sent successfully for prachilal1606@gmail.com.com
+2026-02-11 02:11:21,701 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:11:21,701 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 02:11:21,701 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 02:11:21,702 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 02:11:27,287 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 02:11:27,288 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 02:11:27,288 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 02:11:27,288 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 13:10:28,036 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 13:10:41,455 - backend.app.main - INFO - Compatibility model loaded successfully.
+2026-02-11 13:10:41,456 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 13:10:41,456 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 13:10:41,456 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 13:14:59,069 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 13:15:00,157 - backend.app.main - INFO - Compatibility model loaded successfully.
+2026-02-11 13:15:00,157 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 13:15:00,157 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 13:15:00,158 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 13:16:35,006 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 13:16:47,266 - backend.app.main - INFO - Compatibility model loaded successfully.
+2026-02-11 13:16:47,267 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 13:16:47,267 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 13:16:47,267 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
+2026-02-11 13:17:18,519 - root - INFO - Logging initialized. Writing logs to: D:\Documents\quickbuildr_assessment\backend\logs\log_2026-02-11.txt
+2026-02-11 13:17:19,491 - backend.app.main - INFO - Compatibility model loaded successfully.
+2026-02-11 13:17:19,491 - backend.app.config_resend - INFO - Resend settings loaded: RESEND_API_KEY=re_9cpH54K***..., SMTP_USERNAME=plalindia01@gmail.com
+2026-02-11 13:17:19,491 - backend.app.main - INFO - Settings loaded: Using Resend API with recipient plalindia01@gmail.com
+2026-02-11 13:17:19,492 - backend.app.main - INFO - FastAPI app initialized with CORS enabled for http://localhost:5173
