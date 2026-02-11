@@ -9,11 +9,22 @@ from .config_resend import get_settings
 from .logger import setup_logging
 from .email_service_resend import send_contact_email
 
+import joblib
+from pathlib import Path
+import numpy as np
+
+from .schemas_compatibility import CompatibilityRequest, CompatibilityResponse
 
 
 # initialize logging to console + file
 setup_logging()
 logger = logging.getLogger(__name__)
+
+MODEL_PATH = Path(__file__).parent / "models" / "compatibility_model.joblib"
+compatibility_model = joblib.load(MODEL_PATH)
+
+logger.info("Compatibility model loaded successfully.")
+
 
 settings = get_settings()
 
@@ -46,3 +57,33 @@ async def contact(contact: ContactRequest):
         raise HTTPException(status_code=502,  detail=str(exc)) from exc
 
     return JSONResponse(status_code=200, content={"success": True, "message": "Email sent"})
+
+@app.post("/compatibility", response_model=CompatibilityResponse)
+async def predict_compatibility(payload: CompatibilityRequest):
+
+    features = np.array([[
+    payload.backend_interest,
+    payload.async_comfort,
+    payload.communication_value,
+    payload.timezone_overlap,
+    payload.code_quality_focus,
+    ]])
+
+    prediction = compatibility_model.predict(features)[0]
+
+    prediction = float(np.clip(prediction, 0, 100))
+
+    if prediction >= 85:
+        verdict = "We’d probably build something amazing together."
+    elif prediction >= 70:
+        verdict = "Strong alignment — this could be fun."
+    elif prediction >= 50:
+        verdict = "There’s potential here."
+    else:
+        verdict = "We might need a few sync calls first 😄"
+
+
+    return CompatibilityResponse(
+        compatibility_score=round(prediction, 2),
+        verdict=verdict
+    )
