@@ -7,11 +7,12 @@ import { MdEmail } from "react-icons/md"
 export default function Hero() {
   return (
     <header className="mb-8 text-center">
-      <h1 className="text-3xl sm:text-4xl font-semibold text-slate-900">
+      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent">
         Prachi Lal
       </h1>
 
-      <div className="mt-6 flex items-center justify-center gap-6">
+
+      <div className="mt-6 flex items-center justify-center gap-5">
 
         {/* LinkedIn */}
         <a
@@ -19,8 +20,8 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 hover:border-blue-600 hover:text-blue-600 transition-all duration-200"
-        >
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+
           <FaLinkedin size={20} />
         </a>
 
@@ -30,7 +31,7 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub Profile"
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 hover:border-black hover:text-black transition-all duration-200"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
         >
           <FaGithub size={20} />
         </a>
@@ -39,7 +40,7 @@ export default function Hero() {
         <a
           href="mailto:plalindia01@gmail.com"
           aria-label="Send Email"
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 hover:border-red-500 hover:text-red-500 transition-all duration-200"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
         >
           <MdEmail size={20} />
         </a>
@@ -50,7 +51,7 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Portfolio Website"
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 hover:border-emerald-500 hover:text-emerald-500 transition-all duration-200 hover:scale-110"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
         >
           <FaGlobe size={20} />
         </a>
@@ -61,7 +62,7 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Medium Articles"
-          className="flex items-center justify-center w-10 h-10 rounded-full border border-neutral-200 hover:border-neutral-900 hover:text-neutral-900 transition-all duration-200 hover:scale-110"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
         >
           <FaMedium size={20} />
         </a>
@@ -69,8 +70,15 @@ export default function Hero() {
       </div>
 
 
-      <p className="mt-1 text-sm text-neutral-600">Software Developer | Backend Engineer</p>
-      <p className="mt-4 text-neutral-700 max-w-prose">I build reliable, scalable APIs and backend systems. Available for collaboration and consulting.</p>
+      <p className="mt-3 text-slate-600 text-sm sm:text-base">
+        Backend Engineer · API Systems · Cloud Infrastructure
+      </p>
+
+      <p className="mt-4 max-w-xl mx-auto text-slate-600 leading-relaxed">
+        I design and build reliable, scalable backend systems and APIs.
+        Currently open to collaboration and consulting opportunities.
+      </p>
+
     </header>
   )
 }
